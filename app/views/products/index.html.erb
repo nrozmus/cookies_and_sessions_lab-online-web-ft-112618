@@ -1,0 +1,18 @@
+<h3>Product Index Page</h3>
+
+ <% cart.each do |item| %>
+  <%#= binding.pry %>
+  <%= item %>
+<% end %>
+
+
+ <%= form_tag ({
+  controller: "products",
+  action: "add",
+  method: "post",
+ }) do %>
+
+ <input name=product >
+<input type=submit value="add to cart">
+
+ <% end %>
